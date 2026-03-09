@@ -1,4 +1,4 @@
-import { filterAdmins, averageAge, findUser } from "./utils.js";
+const { filterAdmins, averageAge, findUser } = require("./utils");
 
 const users = [
   { name: "Ada", age: 30, role: "admin" },
