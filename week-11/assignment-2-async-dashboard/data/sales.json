@@ -1,0 +1,6 @@
+[
+  { "product": "Smoothie", "amount": 5000, "category": "drink" },
+  { "product": "Kefir", "amount": 7000, "category": "drink" },
+  { "product": "Granola", "amount": 3000, "category": "food" },
+  { "product": "Salad", "amount": 4500, "category": "food" }
+]
