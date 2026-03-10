@@ -21,10 +21,18 @@ async function loadData() {
       return acc;
     }, {});
 
+    const top3 = [...sales].sort((a,b)=>b.amount-a.amount).slice(0,3);
+
     console.log("\n===== DASHBOARD REPORT =====\n");
+
     console.log("Total Revenue:", totalRevenue);
     console.log("Average User Age:", averageAge);
-    console.log("Count by Category:", countByCategory);
+
+    console.log("\nCount by Category:");
+    console.table(countByCategory);
+
+    console.log("\nTop 3 Sales:");
+    console.table(top3);
 
   } catch (error) {
     console.error("Error:", error.message);
